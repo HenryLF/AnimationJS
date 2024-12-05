@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="52.908924mm"
+   height="8.8194504mm"
+   viewBox="0 0 52.908924 8.8194504"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="PT.svg"
+   inkscape:export-filename="PT.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.79136562"
+     inkscape:cx="103.61835"
+     inkscape:cy="285.58228"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Piston"
+     style="display:inline"
+     transform="matrix(0.33328456,0,0,0.33333348,-13.336122,-13.120154)">
+    <g
+       id="g1354"
+       transform="matrix(0.92236971,0,0,0.98827166,3.0878831,-52.341513)">
+      <g
+         id="g852"
+         transform="translate(7.0271096,18.575767)">
+        <path
+           id="rect1000"
+           style="fill:#b3b3b3;fill-rule:evenodd;stroke:#000000;stroke-width:1.43334;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stop-color:#000000"
+           d="M 34.802266,74.931136 H 203.63466 c 0.82314,0.984185 1.18546,4.176486 0,6.326146 0.85818,1.98295 0.93934,4.07977 0,6.32615 0.82648,1.97927 1.02043,4.05761 0,6.32615 1.10207,2.06721 0.93938,4.98206 0,6.326148 -2.6199,0.0774 -168.832394,0 -168.832394,0 -1.036952,-1.795798 -1.104244,-4.262618 0,-6.326148 -1.047651,-2.14907 -1.471244,-4.27411 0,-6.32615 -0.817044,-1.70528 -1.8795,-3.28939 0,-6.32615 -0.863858,-1.8322 -1.925263,-4.079069 0,-6.326146 z"
+           sodipodi:nodetypes="ccccccccccc" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stop-color:#000000"
+           d="M 202.77395,80.683946 H 33.941556"
+           id="path1106"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stop-color:#000000"
+           d="M 33.941556,87.010096 H 202.77395"
+           id="path1108"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stop-color:#000000"
+           d="M 202.77395,93.336246 H 33.941556"
+           id="path1110"
+           sodipodi:nodetypes="cc" />
+      </g>
+    </g>
+  </g>
+</svg>

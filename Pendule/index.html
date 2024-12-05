@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pendule</title>
+    <style>
+      div {}
+      .graph_container {
+        display : inline-block;
+      }
+      .text{
+        width : 1000px
+      }
+      img {}
+        .canvas_bkg {
+          position : absolute;
+          z-index :1;
+          margin : auto;
+        }
+        .formule {
+        height : 100px;
+        margin-left : 100px;
+        }
+      canvas{
+        padding : 0px;
+        position : relative;
+        display : inline-block;
+        z-index : 20;
+      }
+      fieldset{
+        display : inline-block;
+      }
+      label {
+        font-weight: bold;
+        font-size: 20px ;
+        display: block;
+      }
+      p{
+  line-height: 1.8;
+  text-align : justify;
+  font-size : 20px;
+  font-weight: bold;
+  }
+    </style>
+
+<body>
+  <div class = "canvas_container">
+    <img class = "canvas_bkg" src = "Pendule_Mur.svg">
+    <canvas id = "canvas" class = "pend" width = 950px height = 550px></canvas>
+  </div>
+  <fieldset>
+    <legend> Paramètres de l'animation </legend>
+    <button type = "button" id = "reset"> Masse à l'équilibre </button>
+    <input type="checkbox" id="forces" checked = false >Afficher les forces</input> <br>
+    <input type = "range" id = "string_l" min = 100 max = 350 value = 200 step =10 >
+    <label for = "string_l" id = "string_label"> Longueur du fil: l = 20 cm </label>
+    <input type = "range" id = "frot" min = 0 max = 0.5 value = 0 step =0.01 >
+    <label for = "frot" id = "frot_label"> Forces de frottements: k = 0 kg&#xB7s⁻¹</label>
+  </fieldset>
+  <div class = "graph_container">
+    <img class = "canvas_bkg" src="Graph.svg">
+    <canvas id = "graph" width = 800px height = 200px>
+  </div>
+  <br>
+  <div>
+  <p>
+  Le bilan des forces sur le pendule nous donne l'équation de mouvement suivante : <br>
+  <img class = formule src = "mouvement.svg"> <br>
+  Avec <img src = "thetapp.svg" height=60px> l'accéleration angulaire du pendule et &#x3B8(t) sa position à l'instant t.
+  Cette équation n'est pas solvable en l'état mais pour un angle &#x3B8 relativement faible on peut la simplifier en : <br>
+  <img class = "formule" src = "approx.svg"> <br>
+  Dans ce cas le mouvement du pendule est isochrone, en effet, la période des oscillations ne dépend pas de l'amplitude et est donnée par la formule : <br>
+  <img class = "formule" src = "period.svg"> <br>
+  Où L est la longueur du fil et g = 9,81 m&#xB7s⁻² la constante de pesanteur. Soit ici T = <span id = period> </span> s. <br>
+  Ici la masse de la balle n'a aucun impact sur le mouvement du pendule, qui peut-être approximé par la fonction suivante :<br>
+  <img class = "formule" src = "traj.svg"> <br>
+  Avec &#x3B8;(t) l'angle du pendule par rapport à la verticale (&#x3B8; = 0 rad correspond à la position d'équilibre) à l'instant t, &#x394;&#x3B8; l'écart initial par rapport à la verticale et T la période donnée par la formule précédente.<br>
+  La trajectoire décrite par une telle fonction est périodique ce qui signifie qu'elle se reproduit à l'infini. Cependant dans le cas réel le pendule est soumit à des forces de frottements que l'on peut supposer proportionnelles à sa vitesse. L'équation descriptive de son mouvement est alors : <br>
+  <img class = formule src = "frottements.svg"> <br>
+  Où k est le coefficient de frottement.
+  </p>
+  </div>
+  
+  <script src = "script.js"> </script>
+    
+</body>

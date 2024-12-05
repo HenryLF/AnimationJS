@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="193.12151mm"
+   height="81.253609mm"
+   viewBox="0 0 193.12151 81.253609"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="Balance.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.0724596"
+     inkscape:cx="341.0948"
+     inkscape:cy="208.95311"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Socle"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-6.8351035,-77.999926)">
+    <path
+       id="path234"
+       style="fill:#999999;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stop-color:#000000"
+       inkscape:transform-center-y="-3.5728203"
+       d="m 105.61681,137.12192 10.15565,21.43692 H 91.01924 l 9.67333,-21.43692 c 0.45711,-0.79173 1.34512,-1.78428 2.39268,-1.78428 1.04756,0 1.73377,0.40246 2.53156,1.78428 z"
+       sodipodi:nodetypes="cccczc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Plateau">
+    <rect
+       style="fill:#803300;stroke:#000000;stroke-width:0.714422;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+       id="rect500"
+       width="192.40707"
+       height="10.37322"
+       x="0.35721093"
+       y="45.023296" />
+  </g>
+</svg>

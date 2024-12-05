@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Balle et ressort</title>
+    <style>
+    input[type="range"]{
+  width:300px;
+  height : 1rem;
+      }
+    fieldset {
+  display : inline-block;
+    }
+    label {
+  font-weight: bold;
+  font-size: 20px ;
+  display: block;
+    }
+    img{}
+    .graph_bkg{
+  position : absolute;
+  z-index :1;
+    }
+    .canvas_bkg{
+  position : absolute;
+  z-index :1;
+    }
+     .formule{
+  margin-left : 475px ;
+  width : 250px;
+     }
+     .formule2{
+  margin-left : 400px ;
+  width : 400px;
+     }
+    canvas{
+  padding : 0px;
+    }
+    .graph{
+  display : inline;
+  position : relative;
+  z-index : 20;
+    }
+    .animation{
+  display : inline;
+  position : relative;
+  z-index : 20;
+    }
+    
+    div{}
+    .intro{
+  width : 800px;
+  display : inline-block;
+    }
+    .text{
+  width : 1200px;
+  display : inline_block;
+    }
+    .graph_container{
+  display:inline-block;
+  width:1000px; 
+  height:200px;
+  margin: 0 auto; 
+  position:relative; 
+    }
+    .canvas_container{
+  display:inline-block;
+  width:1600px; 
+  height:300px;
+  margin: 0 auto; 
+  position:relative; 
+  }
+    p{
+  line-height: 1.8;
+  text-align : justify;
+  font-size : 20px;
+  font-weight: bold;
+  }
+    </link>
+  </style>
+
+<body>
+	<div class = "canvas_container">
+	<img class = "canvas_bkg" src="BR_Mur.svg">
+	<canvas id="canvas" class = "animation" width="1600" height="300"></canvas>
+	</div>
+	<fieldset>
+	<legend> Paramètres de l'animation </legend>
+	<button type = "button" id = "reset"> Masse à l'équilibre </button> <br>
+	<input type="range" id = "masse" min = 0.1 max = 5 value = 1 step = 0.1>
+	<label id = "m_label" for = "mass"> Masse de la balle : m = 1 kg </label>
+	<input type="range" id = "k_ressort" min = 0.1 max = 5 value = 1 step = 0.1>
+	<label id = "k_label" for = "mass"> Raideur du ressort : k = 1 N&#xB7m⁻² </label>
+	<input type="checkbox" id="frot" checked = false />
+	<input type = "range" id = "k_frot" min = 0.25 max = 1 step = .01 value = 0.05 disabled = true>
+	<label id = "frot_label" for = "frot"> Forces de frottements </label>
+	</fieldset>
+	<div class = "intro">
+	<p>
+	Cette animation représente les oscillations d'un système masse-ressort qui ont la particularité d'être isochrones (c'est à dire que leur période ne dépendent pas de l'amplitude).
+	En effet la période des oscillations est donnée par la formule suivante :<br>
+	<img src = "period.svg" width = 120px> 
+	 soit ici : T = <span id = "period">6.28</span> s
+	</p>
+	</div>
+	<div id = "graph_container">
+	<img class = "graph_bkg" src = "Graph.svg">
+	<canvas id ="graph" width  = 1000 height  = 200>
+	</div>
+	<div class = "text">
+	<p>
+	La force exercée par le ressort sur la balle dépend de l'écart par rapport à la position d'équilibre : <br>
+	<img class = "formule" src = "force.svg"><br>
+	Où k est la constante de raideur du ressort et x<sub>0</sub> sa position d'équilibre. On peut voir que plus sa position est éloignée de la masse est loin de sa position d'équilibre plus le ressort la tire ou pousse dans le sens opposés.<br>
+	<br>
+	Cependant la masse arrive à la position d'équilibre avec une certaine vitesse, son inertie l'entraine au-delà. Ce qui nous donne le mouvement d'oscillation observé et qui peut être modélisé par la formule :<br>
+	<img class = "formule" src = "position.svg"><br>
+	Avec x(t) la position de la masse après t secondes, &#916x la distance initiale avec la position d'équilibre et T la période donnée par la formule plus haut. <br>
+	<br>
+	Toutefois dans la réalité le ressort ne retransmet pas l'intégralité de l'énergie fournie par le mouvement de la masse. Une partie de l'énergie cinétique est en effet necessaire à la déformation du ressort, une autre est dissipée par les frottements de l'air. <br>
+	Une approche commune en physique et souvent vérifiée est de considérer que ces pertes d'énergie sont proportionnelles à la vitesse de la masse.<br>
+	En tenant compte des frottements, le mouvement de la masse peut être modélisée par la formule suivante: <br>
+	<img class = formule2 src = "frottements.svg"> <br>
+	Où f est le coefficient de frottements, sur le graphique c'est sa valeur qui modifie "l'enveloppe" qui encadre les oscillations.
+	</p>
+	</div>
+	<script src="./script.js"></script>
+</body>

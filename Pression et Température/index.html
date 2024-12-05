@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pression et Température</title>
+    <style>
+    input[type="range"]{
+      width:200px;
+      height : 2rem;
+      }
+    label {
+  font-weight: bold;
+  font-size: 18px ;
+  display: block;
+    }
+    div {
+  float: left;
+  padding: 30px; 
+   }
+   .text{
+     width: 400px;
+     height: 150px;
+   }
+   p{
+   line-height: 1.8;
+   text-align : justify;
+   }
+    </link>
+  </style>
+
+<body>
+	<div class = "first">
+		<input type="range" id="Temp" name="Temp" min="0.1" max="2" value="1" step=".1" />
+		<label id = "T_label" for="Temp">Température (K)</label>
+		<input type="range" id="Poids" name="Poids" min="0" max="50000" value="0" step="100" />
+		<label id = "P_label" for="Poids">Poids exercé</label>
+		<canvas id="canvas" width="220" height="420">
+		</canvas>
+	</div>
+	<div class = "text">
+		<p>
+		L'animation suivante représente une enceinte de 1m³, remplie de gaz (représenté par les billes bleus) et fermée par un piston. <br>
+		<br>
+		Les deux curseurs permettent de régler la température du gaz à l'intérieur de l'enceinte et le poids exercé sur le piston. <br>
+		<br>
+		L'air extérieur est considéré à pression atmosphérique et à 293 K (soit environ 20°C). <br>
+		<br>
+		Cette expérience illustre la loi de Boyle-Mariote ou loi des gaz parfaits qui relie la pression P d'un gaz et le volume V qu'il occupe à sa quantité de matière n et sa température via la constante des gaz parfait R = 8,314 J&#xb7;K⁻¹&#xb7;mol⁻¹.<br>
+		</p>
+		<img src = "BoyleMariote.svg">
+	</div>
+	<script src="./script.js"></script>
+</body>

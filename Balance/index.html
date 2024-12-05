@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Une simple balance</title>
+    <style>
+    input[type="range"]{
+      width:50rem;
+      height : 2rem;
+      }
+    label {
+  font-weight: bold;
+  font-size: 43px ;
+  display: block;
+}
+    </link>
+  </style>
+
+<body>
+	<div>
+		<input type="range" id="ratio" name="ratio" min="25" max="75" value="0" step="1" />
+		<label id = "ratio_label" for="ratio">ratio balance</label>
+	</div>
+	<canvas id="canvas" width="1280" height="900">
+	</canvas>
+	<script src="./script.js"></script>
+</body>

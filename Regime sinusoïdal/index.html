@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Régime sinusoïdal</title>
+    <style>
+    input[type="range"]{
+      width:300px;
+      height : 1rem;
+      }
+    label {
+  font-weight: bold;
+  font-size: 20px ;
+  display: block;
+    }
+    canvas{
+    padding : 30px;
+    }
+    div {}
+    .input{
+    float : left;
+    width: 400px;
+    }
+   p{
+   line-height: 1.8;
+   text-align : justify;
+   font-size : 20px;
+   font-weight: bold;
+   }
+    </link>
+  </style>
+
+<body>
+	<canvas id="canvas" width="1000" height="600">
+	</canvas>
+	<div class = "input">
+		<input type="range" id="freq" name="freq" min="0.1" max="50" value="1" step="0.1" />
+		<label id = "freq_label" for="freq">Frequence : 1 Hz</label>
+		<input type="range" id="ampl" name="ampl" min="0" max="1.5" value="1" step=".01" />
+		<label id = "ampl_label" for="ampl">Amplitude : 1 </label>
+		<input type="range" id="phas" name="phas" min="0" max="2" value="0" step=".1" />
+		<label id = "phas_label" for="phas">Phase : 0 rad</label>
+	<p>
+	Voici la représentation d'une fonction sinusoidale, vous pouvez changer son amplitude, sa frequence et sa phase en utilisant les curseurs ci dessus. <br>
+	<br>
+	L'expression de la fonction représentée est : <br>
+	<br>
+	<img src = './math.png'> <br>
+	Où A est l'amplitude, f la fréquence en Hz et &#966; la phase en rad.
+	</p>
+	</div>
+	<script src="./script.js"></script>
+</body>
